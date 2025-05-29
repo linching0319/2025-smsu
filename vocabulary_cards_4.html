@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英語單字表 - 新組合</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #38b2ac;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .vocabulary-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .vocab-item {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 5px solid #38b2ac;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            display: grid;
+            grid-template-columns: 40px 200px 80px 80px 150px 1fr;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .vocab-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .vocab-item:nth-child(even) {
+            border-left-color: #319795;
+        }
+        
+        .number {
+            background: #38b2ac;
+            color: white;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .vocab-item:nth-child(even) .number {
+            background: #319795;
+        }
+        
+        .word {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #2d3748;
+        }
+        
+        .pos {
+            background: #b2f5ea;
+            color: #234e52;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .level {
+            background: #b2f5ea;
+            color: #234e52;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .vocab-item:nth-child(even) .level {
+            background: #b2f5ea;
+            color: #234e52;
+        }
+        
+        .meaning {
+            color: #2d3748;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+        
+        .usage {
+            color: #4a5568;
+            font-size: 0.9em;
+            font-style: italic;
+            line-height: 1.3;
+        }
+        
+        .grid-header {
+            display: grid;
+            grid-template-columns: 40px 200px 80px 80px 150px 1fr;
+            gap: 15px;
+            padding: 15px 20px;
+            background: #e6fffa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 0.9em;
+        }
+        
+        .grid-header div {
+            text-align: center;
+        }
+        
+        .grid-header div:first-child,
+        .grid-header div:nth-child(5),
+        .grid-header div:last-child {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>英語單字表</h1>
+        </div>
+        
+        <div class="grid-header">
+            <div>#</div>
+            <div>單字</div>
+            <div>詞性</div>
+            <div>字級</div>
+            <div>意思</div>
+            <div>常見用法</div>
+        </div>
+        
+        <div class="vocabulary-grid">
+            <div class="vocab-item">
+                <div class="number">7</div>
+                <div class="word">permission</div>
+                <div class="pos">n.</div>
+                <div class="level">③</div>
+                <div class="meaning">允許、許可</div>
+                <div class="usage">with/without permission 經/未<br>經許可</div>
+            </div>
+            
+            <div class="vocab-item">
+                <div class="number">8</div>
+                <div class="word">harassment</div>
+                <div class="pos">n.</div>
+                <div class="level">⑥</div>
+                <div class="meaning">騷擾</div>
+                <div class="usage"></div>
+            </div>
+            
+            <div class="vocab-item">
+                <div class="number">9</div>
+                <div class="word">lead to</div>
+                <div class="pos">phr.</div>
+                <div class="level"></div>
+                <div class="meaning">造成</div>
+                <div class="usage">+N (結果)</div>
+            </div>
+            
+            <div class="vocab-item">
+                <div class="number">10</div>
+                <div class="word">consequence</div>
+                <div class="pos">n.</div>
+                <div class="level">④</div>
+                <div class="meaning">後果</div>
+                <div class="usage"></div>
+            </div>
+            
+            <div class="vocab-item">
+                <div class="number">11</div>
+                <div class="word">privacy</div>
+                <div class="pos">n.</div>
+                <div class="level">④</div>
+                <div class="meaning">隱私</div>
+                <div class="usage"></div>
+            </div>
+            
+            <div class="vocab-item">
+                <div class="number">12</div>
+                <div class="word">publicity</div>
+                <div class="pos">n.</div>
+                <div class="level">④</div>
+                <div class="meaning">公開</div>
+                <div class="usage">individual publicity rights肖像<br>權 (個人公開權)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
